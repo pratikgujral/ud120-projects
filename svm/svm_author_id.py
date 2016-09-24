@@ -24,6 +24,9 @@ features_train, features_test, labels_train, labels_test = preprocess()
 
 #########################################################
 ### your code goes here ###
+from sklearn.svm import SVC
+
+from sklearn.metrics import accuracy_score
 
 #########################################################
 
