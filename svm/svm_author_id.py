@@ -26,6 +26,10 @@ from sklearn.svm import SVC
 clf = SVC(kernel='linear')
 from time import time
 t0 = time()
+
+features_train = features_train[:len(features_train)/100] 
+labels_train = labels_train[:len(labels_train)/100] 
+
 clf.fit(features_train, labels_train)
 print "Training Time SVM:", round(time()-t0,3), "seconds"
 
